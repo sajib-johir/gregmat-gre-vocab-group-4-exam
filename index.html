@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GregMat GRE Vocab Group 1 Exam — Day 4</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-badge">Daily GRE Vocabulary Exam Portal</div>
+      <h1>GregMat GRE Vocab Group 1 Exam — Day 4</h1>
+      <p>Words 91–120 | 30 Words | 3 Exam Levels</p>
+    </header>
+
+    <main class="container">
+      <section id="menuScreen" class="screen active-screen">
+        <div class="panel intro-panel">
+          <div>
+            <h2>Choose Your Exam Level</h2>
+            <p>Start with Basic for recall, continue to Medium for mixed practice, and finish with Hard for GRE-style challenge.</p>
+          </div>
+          <div class="word-range-card">
+            <span>Day</span>
+            <strong>4</strong>
+            <small>Words 91–120</small>
+          </div>
+        </div>
+
+        <div class="name-card">
+          <label for="studentName">Enter your name</label>
+          <input id="studentName" type="text" placeholder="Student" autocomplete="name" />
+          <p class="tiny-note">Leave blank to use “Student”. The timer starts only after the instruction screen.</p>
+        </div>
+
+        <div id="examCards" class="exam-grid"></div>
+      </section>
+
+      <section id="instructionScreen" class="screen">
+        <div class="panel instruction-panel">
+          <button class="ghost-btn small-btn" id="backToMenuFromInstruction">← Back to Main Menu</button>
+          <div id="instructionContent"></div>
+          <button class="primary-btn" id="startExamBtn">Start Exam</button>
+        </div>
+      </section>
+
+      <section id="examScreen" class="screen">
+        <div class="status-bar" id="statusBar"></div>
+        <div id="questionsContainer" class="questions-container"></div>
+        <div class="part-nav">
+          <button id="prevPartBtn" class="secondary-btn">Previous Part</button>
+          <button id="nextPartBtn" class="primary-btn">Next Part</button>
+          <button id="submitExamBtn" class="danger-btn">Submit Exam</button>
+        </div>
+      </section>
+
+      <section id="resultScreen" class="screen">
+        <div id="resultContent"></div>
+      </section>
+
+      <section id="exitScreen" class="screen">
+        <div class="panel center-panel">
+          <h2>Exam session completed.</h2>
+          <p>You may now close this tab.</p>
+          <button class="primary-btn" id="returnFromExitBtn">Back to Main Menu</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Offline EPort-style GRE vocabulary practice portal. No internet, CDN, or external library required.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
